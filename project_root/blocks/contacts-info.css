@@ -1,0 +1,136 @@
+.contacts-info {
+  max-width: 388px;
+  align-self: center;
+}
+
+.contacts-info__data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 59px;
+}
+
+.contacts-info__text {
+  max-width: 138px;
+}
+
+.contacts-info__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.contacts-info__subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin: 17px 0 0;
+}
+
+.contacts-info__social {
+  margin-bottom: 22px;
+}
+
+.contacts-info__links {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 17px 0 0;
+}
+
+.contacts-info__list {
+  margin-right: 58px;
+}
+
+.contacts-info__list:last-child {
+  margin-right: 0;
+}
+
+.contacts-info__link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.contacts-info__link:hover {
+  opacity: .7;
+  transition: .1s linear;
+}
+
+.contacts-info__link:nth-last-child(3) {
+  margin-right: 0;
+}
+
+.contacts-info__privacy {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 105px;
+}
+
+.contacts-info__privacy-link {
+  color: #949494;
+}
+
+.contacts-info__privacy-link:hover {
+  opacity: .7;
+  transition: .1s linear;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contacts-info {
+    margin-top: 50px;
+  }
+  .contacts-info__privacy {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contacts-info {
+    align-self: flex-start;
+    margin-top: 59px;
+  }
+  .contacts-info__data {
+    flex-direction: column;
+    margin: 0;
+  }
+  .contacts-info__links {
+    flex-direction: column;
+  }
+  .contacts-info__title {
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .contacts-info__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+  }
+  .contacts-info__text {
+    margin-bottom: 35px;
+  }
+  .contacts-info__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts-info__list {
+    margin-bottom: 13px;
+  }
+  .contacts-info__list:last-child {
+    margin-bottom: 0;
+  }
+  .contacts-info__social {
+    margin-bottom: 30px;
+  }
+  .contacts-info__privacy {
+    margin-top: 36px;
+  }
+}

@@ -1,0 +1,111 @@
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-content__heading {
+  max-width: 420px;
+  align-self: center;
+}
+
+.hero-content__profession {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFBB01;
+  margin: 0;
+}
+
+.hero-content__title {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  color: #FFFFFF;
+  margin: 14px 0 0;
+}
+
+.hero-content__subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin: 20px 0 0;
+}
+
+.hero__button {
+  background-color: #FFBB01;
+  box-shadow: 0 4px 0 #B68500;
+  border-radius: 5px 5px 10px 10px;
+  border-style: none;
+  cursor: pointer;
+  padding: 24px 55px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #1B2944;
+  margin: 38px 0 0;
+}
+
+.hero__button:hover {
+  background-color: #ffde00;
+  transition: .1s linear;
+}
+
+.hero-content__avatar {
+  max-width: 389px;
+  height: auto;
+  border-radius: 50%;
+  border: 11px solid #fff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero-content {
+    max-width: 924px;
+    margin: 0 auto;
+  }
+  .hero-content__avatar {
+    width: 40%;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-content__heading {
+    margin-top: 17px;
+    text-align: center;
+    order:2;
+  }
+  .hero-content__avatar {
+    width: 46.13%;
+    order: 1;
+    border: 3px solid #fff;
+  }
+  .hero-content__profession {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .hero-content__title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 4px;
+  }
+  .hero-content__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 15px;
+  }
+  .hero__button {
+    padding: 14px 42px 18px 42px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 38px;
+  }
+}

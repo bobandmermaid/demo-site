@@ -1,0 +1,31 @@
+.social-links {
+  max-width: 136px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-links__link {
+  margin-right: 21px;
+}
+
+.social-links__link:last-child {
+  margin-right: 0;
+}
+
+.social-links__link:hover {
+  opacity: .7;
+  transition: .1s linear;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .social-links__link {
+    margin-right: 16px;
+  }
+  .social-links__img {
+    width: 13px;
+  }
+}

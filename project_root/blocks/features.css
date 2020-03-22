@@ -1,0 +1,19 @@
+.features {
+  font-family: 'Roboto', sans-serif;
+  background-color: #141F35;
+}
+
+.features__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .features__title {
+    font-size: 19px;
+    line-height: 22px;
+  }
+}

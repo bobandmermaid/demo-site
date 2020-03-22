@@ -1,0 +1,103 @@
+.contacts-form {
+  width: 100%;
+  max-width: 423px;
+  background: #FFFFFF;
+  box-shadow: -5px 5px 0 #FFC41D;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts-form__title {
+  max-width: 317px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+  margin-top: 44px;
+  margin-bottom: 32px;
+}
+
+.contacts-form__title_mobile {
+  display: none;
+}
+
+.contacts-form__input {
+  width: 70.2%;
+  box-shadow: inset 0 3px 10px rgba(199, 199, 199, 0.25);
+  border-radius: 5px;
+  border-style: none;
+  padding: 25px 0 27px 47px;
+  margin-bottom: 19px;
+}
+
+.contacts-form__input:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+.contacts-form__input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: #949494;
+}
+
+.contacts-form__input_name {
+  background: #F8F8F8 url('../images/user-icon.svg') no-repeat 22px 23px;
+}
+
+.contacts-form__input_phone {
+  background: #F8F8F8 url('../images/phone-icon.svg') no-repeat 22px 23px;
+}
+
+.contacts-form__button-link {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #141F35;
+  text-decoration: none;
+}
+
+.contacts-form__button {
+  background-color: #FFBB01;
+  box-shadow: 0 4px 0 #B68500;
+  border-radius: 5px 5px 10px 10px;
+  border-style: none;
+  cursor: pointer;
+  padding: 28px 84px 23px 84px;
+  margin-top: 29px;
+  margin-bottom: 55px;
+}
+
+.contacts-form__button:hover {
+  background-color: #ffde00;
+   transition: .1s linear;
+ }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contacts-form__title {
+    font-size: 15px;
+    line-height: 21px;
+    margin-top: 40px;
+    margin-bottom: 27px;
+  }
+  .contacts-form__title_desktop {
+    display: none;
+  }
+  .contacts-form__title_mobile {
+    display: block;
+  }
+  .contacts-form__input {
+    padding: 23px 0 22px 47px;
+  }
+  .contacts-form__button-link {
+    font-size: 10px;
+  }
+  .contacts-form__button {
+    padding: 17px 42px 10px;
+    margin-top: 36px;
+  }
+}
